@@ -1,0 +1,164 @@
+.container {
+  padding: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 32px;
+}
+
+.checkoutLayout {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .checkoutLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 16px;
+}
+
+.noAddress {
+  color: #6b7280;
+}
+
+.noAddress a {
+  color: #3b82f6;
+}
+
+.addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.addressCard {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.addressCard.selected {
+  border-color: #3b82f6;
+  background: #f0f9ff;
+}
+
+.addressRadio {
+  margin-top: 4px;
+}
+
+.addressContent {
+  flex: 1;
+}
+
+.addressLine {
+  margin: 0 0 4px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.datetimeInput {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.datetimeInput:focus {
+  border-color: #3b82f6;
+}
+
+.orderSummary {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  height: fit-content;
+  position: sticky;
+  top: 88px;
+}
+
+.summaryTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 16px;
+}
+
+.items {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 16px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.itemName {
+  flex: 1;
+  font-size: 14px;
+  color: #374151;
+}
+
+.itemQty {
+  color: #6b7280;
+  margin: 0 12px;
+}
+
+.itemPrice {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}
+
+.summaryRow.total {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
