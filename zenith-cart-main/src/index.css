@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 33 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 27% 22%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 14% 92%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 207 78% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 4 78% 57%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 145 63% 49%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 220 13% 89%;
+    --input: 220 13% 89%;
+    --ring: 33 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 213 27% 22%;
+    --sidebar-foreground: 220 14% 92%;
+    --sidebar-primary: 33 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 213 27% 28%;
+    --sidebar-accent-foreground: 220 14% 92%;
+    --sidebar-border: 213 27% 30%;
+    --sidebar-ring: 33 100% 50%;
+
+    --navbar-height: 3.5rem;
+  }
+
+  .dark {
+    --background: 220 20% 7%;
+    --foreground: 220 14% 92%;
+    --card: 220 20% 10%;
+    --card-foreground: 220 14% 92%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 220 14% 92%;
+    --primary: 33 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 27% 18%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 14% 16%;
+    --muted-foreground: 220 9% 60%;
+    --accent: 207 78% 39%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 4 78% 57%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 145 63% 49%;
+    --success-foreground: 0 0% 100%;
+    --border: 220 14% 18%;
+    --input: 220 14% 18%;
+    --ring: 33 100% 50%;
+    --sidebar-background: 220 20% 5%;
+    --sidebar-foreground: 220 14% 80%;
+    --sidebar-primary: 33 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 12%;
+    --sidebar-accent-foreground: 220 14% 80%;
+    --sidebar-border: 220 14% 14%;
+    --sidebar-ring: 33 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(33, 100%, 50%), hsl(25, 100%, 45%));
+  }
+}
